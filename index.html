@@ -16,5 +16,14 @@
    <div class=resultsection></div>
    <button>GO!</button>
    <script src=https://code.jquery.com/jquery-3.3.1.min.js></script>
+   <script>
+     $(function() {
+        $('.resultsection').hide()
+        var add_option = function() {
+          $ ('.inputs').append('<input></input>')
+        }
+        $ ('.addOption').click(add_option)
+      })
+   </script>
  </body>
 </html>
